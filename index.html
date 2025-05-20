@@ -1,21 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerce Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="navbar1">navbar1</div>
-        <div class="navbar2">navbar2</div>
-        <div class="hero-section">herosection</div>
-        <div class="content1">content1</div>
-        <div class="content2">content2</div>
-        <div class="content3">content3</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Exclusive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+        </ul>
       </div>
-    </header>
-  </body>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header-image">
+    <div class="header-text">
+      <h1>Up to 10% Off Voucher</h1>
+      <p>Summer Sale for All Swim Suits And Free Express Delivery - OFF 50%</p>
+      <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Flash Sales -->
+  <div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4>Today's Flash Sales</h4>
+      <div>03 : 23 : 56</div>
+      <a href="#" class="btn btn-outline-secondary">View All</a>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Redmi 5A Compass</h6>
+            <p class="text-danger">$40 <span class="text-decoration-line-through text-muted">$60</span></p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>AK-900 Wired Keyboard</h6>
+            <p class="text-danger">$60 <span class="text-decoration-line-through text-muted">$100</span></p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>IPS LED Gaming Monitor</h6>
+            <p class="text-danger">$340 <span class="text-decoration-line-through text-muted">$470</span></p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>S-Series Comfort Chair</h6>
+            <p class="text-danger">$200 <span class="text-decoration-line-through text-muted">$250</span></p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="container my-5">
+    <h4>Browse By Category</h4>
+    <div class="row text-center">
+      <div class="col-md-2"><i class="category-icon">📱</i><br>Phones</div>
+      <div class="col-md-2"><i class="category-icon">💻</i><br>Computers</div>
+      <div class="col-md-2"><i class="category-icon">⌚</i><br>Smartwatch</div>
+      <div class="col-md-2"><i class="category-icon">📷</i><br>Cameras</div>
+      <div class="col-md-2"><i class="category-icon">🎧</i><br>Headphones</div>
+      <div class="col-md-2"><i class="category-icon">🎮</i><br>Gaming</div>
+    </div>
+  </div>
+
+  <!-- Best Selling Products -->
+  <div class="container my-5">
+    <h4>Best Selling Products</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>The north coat</h6>
+            <p class="text-danger">$260</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Gucci duffle bag</h6>
+            <p class="text-danger">$340 <span class="text-decoration-line-through text-muted">$400</span></p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>RGB liquid CPU Cooler</h6>
+            <p class="text-danger">$180 <span class="text-decoration-line-through text-muted">$200</span></p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Small Bookself</h6>
+            <p class="text-danger">$40</p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music Experience -->
+  <div class="featured-image" style="background: url('https://via.placeholder.com/1200x300') no-repeat center center;">
+    <div>
+      <h2>Enhance Your Music Experience</h2>
+      <p>20% 50% 30%</p>
+      <a href="#" class="btn btn-success">Buy Now</a>
+    </div>
+  </div>
+
+  <!-- Explore Products -->
+  <div class="container my-5">
+    <h4>Explore Our Products</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Breed Dry Dog</h6>
+            <p class="text-danger">$50</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>CANON EOS 5D</h6>
+            <p class="text-danger">$360</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>ASUS FHD Gaming</h6>
+            <p class="text-danger">$185</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Cunology product</h6>
+            <p class="text-danger">$50</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Kids Electric car</h6>
+            <p class="text-danger">$90</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Jr. Zoom Soccer Cleats</h6>
+            <p class="text-danger">$30</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>GP11 Shooter Gamepad</h6>
+            <p class="text-danger">$50</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product">
+          <div class="card-body">
+            <h6>Quilted Satin Jacket</h6>
+            <p class="text-danger">$60</p>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Arrival -->
+  <div class="container my-5">
+    <h4>New Arrival</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card featured-image" style="background: url('https://via.placeholder.com/400x300') no-repeat center center;">
+          <div class="card-body text-white">
+            <h6>PlayStation 5</h6>
+            <p>Shop Now</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card featured-image" style="background: url('https://via.placeholder.com/400x300') no-repeat center center;">
+          <div class="card-body text-white">
+            <h6>Women's collections</h6>
+            <p>Shop Now</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card featured-image" style="background: url('https://via.placeholder.com/400x300') no-repeat center center;">
+          <div class="card-body text-white">
+            <h6>Perfume</h6>
+            <p>Shop Now</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Exclusive</h5>
+          <p>Subscribe<br>Get 10% off your first order<br><input type="email" class="form-control mt-2" placeholder="Enter your email"></p>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <p>My Account<br>Discount<br>Downloads<br>Order Tracking<br>Contact</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Account</h5>
+          <p>Privacy Policy<br>Terms of Use<br>FAQ</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Link</h5>
+          <p>Accessories<br>Download App<br><img src="https://via.placeholder.com/100x100" alt="QR Code"></p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>© Copyright Rimel 2025. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
