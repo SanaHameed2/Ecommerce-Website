@@ -6,9 +6,11 @@
   <title>MegaMart Ecommerce Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Top Bar -->
+  <!-- top navbar -->
   <div class="top-bar py-2">
     <div class="container">
       <div class="row align-items-center">
@@ -16,83 +18,97 @@
           <span>Welcome to worldwide MegaMart!</span>
         </div>
         <div class="col-md-6 text-end">
-          <a href="#" class="text-primary"><img src="assest/images/Location.png">Deliver to 423851</a> |
-          <a href="#" class="text-primary"><img src="assest/images/iconoir_delivery-truck.png">Track your order</a> |
-          <a href="#" class="text-primary"><img src="assest/images/Discount.png">All Offers</a>
+          <a href="#" class="top-bar-link"><img src="assest/images/Location.png" alt="Location Icon" class="top-bar-icon">Deliver to 423851</a>
+          <a href="#" class="top-bar-link"><img src="assest/images/iconoir_delivery-truck.png" alt="Delivery Truck Icon" class="top-bar-icon">Track your order</a>
+          <a href="#" class="top-bar-link"><img src="assest/images/Discount.png" alt="Discount Icon" class="top-bar-icon">All Offers</a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="assest/images/Group 1.png"></a>
-      <a class="navbar-brand" href="#"><img src="assest/images/MegaMart.png"></a>
+      <a class="navbar-brand-logo me-0" href="#"><img src="assest/images/Group 1.png" alt="MegaMart Logo Icon" class="navbar-logo-icon"></a>
+      <a class="navbar-brand-text ms-2" href="#"><img src="assest/images/MegaMart.png" alt="MegaMart Text Logo" class="navbar-logo-text"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="d-flex w-100 align-items-center">
-          <form class="d-flex w-50 mx-3">
-            <input class="form-control me-2" type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
+          <form class="d-flex flex-grow-1 mx-3 search-form">
+            <div class="search-input-wrapper">
+              <i class="fas fa-search search-icon"></i>
+              <input class="form-control me-2 search-input" type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
+              <i class="fas fa-microphone mic-icon"></i>
+            </div>
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="assest/images/user.png">Sign Up/Sign In</a>
+              <a class="nav-link" href="#"><img src="assest/images/user.png" alt="User Icon" class="nav-icon">Sign Up/Sign In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="assest/images/Buy.png">Cart</a>
+              <a class="nav-link" href="#"><img src="assest/images/Buy.png" alt="Cart Icon" class="nav-icon">Cart</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-
-  <!-- Category Menu -->
-  <div class="category-menu py-3">
-    <div class="container">
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#">Groceries</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Premium Fruits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Home & Kitchen</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Electronics</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Beauty</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Home Improvement</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sports, Toys & Luggage</a></li>
-      </ul>
-    </div>
+  <!-- category -->
+<div class="category-menu py-3">
+  <div class="container">
+    <ul class="nav justify-content-center flex-wrap gap-2">
+      <li class="nav-item">
+        <a class="nav-link active-category" href="#">Groceries <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Premium Fruits <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Home & Kitchen <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Fashion <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Electronics <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Beauty <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Home Improvement <span class="arrow">▼</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link category-pill" href="#">Sports, Toys & Luggage <span class="arrow">▼</span></a>
+      </li>
+    </ul>
   </div>
-  <!-- Hero Section -->
-  <section class="hero-section text-white">
+</div>
+  <!-- hero section -->
+  <section class="hero-section text-white mb-5" style="background-image: url('assets/images/smartwatch-background.jpg'); background-size: cover; background-position: center; border-radius: 10px; margin: 20px auto; max-width: 1200px; padding: 40px;">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 hero-text-content">
           <h1 class="hero-heading">Best Deal Online on smart watches</h1>
           <h2 class="hero-subheading">SMART WEARABLE.</h2>
           <p class="hero-discount">UP to 80% OFF</p>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="assets/images/smart-watch.png" alt="Smart Watch" class="img-fluid" style="max-height: 400px;">
+        <div class="col-lg-6 text-center hero-image-content">
+          <img src="assest\images\image 2.png" alt="Smart Watch" class="img-fluid hero-smartwatch-img">
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Smartphones Section -->
   <section class="py-5">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-5">
-        <h2 class="section-title">Grab the best deal on Smartphones</h2>
-        <a href="#" class="text-primary no-underline">View All</a>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title-heading">Grab the best deal on Smartphones</h2>
+        <a href="#" class="text-primary no-underline view-all-link">View All</a>
       </div>
       <div class="row">
-        <!-- Product 1 -->
         <div class="col-md-3 col-6 mb-4">
           <div class="product-card h-100">
-            <img src="assest/images/img1.png" class="card-img-top" alt="Galaxy S22">
+            <img src="assest\images\image 3 (2).png" class="card-img-top" alt="Galaxy S22 Ultra">
             <div class="card-body">
               <h5 class="product-name">Galaxy S22 Ultra</h5>
               <div>
@@ -104,10 +120,9 @@
           </div>
         </div>
         
-        <!-- Product 2 -->
         <div class="col-md-3 col-6 mb-4">
           <div class="product-card h-100">
-            <img src="assest/images/img2.png" class="card-img-top" alt="Galaxy M13">
+            <img src="assest\images\image 3 (3).png" class="card-img-top" alt="Galaxy M13">
             <div class="card-body">
               <h5 class="product-name">Galaxy M13 (4G) 64 GB</h5>
               <div>
@@ -119,10 +134,9 @@
           </div>
         </div>
         
-        <!-- Product 3 -->
         <div class="col-md-3 col-6 mb-4">
           <div class="product-card h-100">
-            <img src="assest/images/img1.png" class="card-img-top" alt="Galaxy M33">
+            <img src="assest\images\image 3 (3).png" class="card-img-top" alt="Galaxy M33">
             <div class="card-body">
               <h5 class="product-name">Galaxy M33 (4G) 64 GB</h5>
               <div>
@@ -134,10 +148,9 @@
           </div>
         </div>
         
-        <!-- Product 4 -->
         <div class="col-md-3 col-6 mb-4">
           <div class="product-card h-100">
-            <img src="assest/images/img2.png" class="card-img-top" alt="Galaxy S22">
+            <img src="assest\images\image 3 (3).png" class="card-img-top" alt="Galaxy S22">
             <div class="card-body">
               <h5 class="product-name">Galaxy S22 Ultra</h5>
               <div>
@@ -151,160 +164,216 @@
       </div>
     </div>
   </section>
-
-  <!-- Categories Section -->
-  <section class="categories-section">
+  <section class="categories-section py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>Shop From Top Categories</h2>
-        <a href="#" class="text-primary no-underline">View All</a>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title-heading">Shop From Top Categories</h2>
+        <a href="#" class="text-primary no-underline view-all-link">View All</a>
       </div>
-      <div class="category-grid">
-        <div class="category-card">
-          <div class="category-image">Mobile Image</div>
-          <p class="category-name">Mobile</p>
+      <div class="row text-center">
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest\images\Component 8.png" alt="Mobile" class="category-image">
+          </div>
+          <p class="category-name mt-2">Mobile</p>
         </div>
-        <div class="category-card">
-          <div class="category-image">Cosmetics Image</div>
-          <p class="category-name">Cosmetics</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest\images\cosmetic.png" alt="Cosmetics" class="category-image">
+          </div>
+          <p class="category-name mt-2">Cosmetics</p>
         </div>
-        <div class="category-card">
-          <div class="category-image">Electronics Image</div>
-          <p class="category-name">Electronics</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest\images\Component 8.png" alt="Electronics" class="category-image">
+          </div>
+          <p class="category-name mt-2">Electronics</p>
         </div>
-        <div class="category-card">
-          <div class="category-image">Furniture Image</div>
-          <p class="category-name">Furniture</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest/images/image 4.png" alt="Furniture" class="category-image">
+          </div>
+          <p class="category-name mt-2">Furniture</p>
         </div>
-        <div class="category-card">
-          <div class="category-image">Watches Image</div>
-          <p class="category-name">Watches</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest\images\image 5.png" alt="Watches" class="category-image">
+          </div>
+          <p class="category-name mt-2">Watches</p>
         </div>
-        <div class="category-card">
-          <div class="category-image">Decor Image</div>
-          <p class="category-name">Decor</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="category-card">
+            <img src="assest\images\image 6.png" alt="Decor" class="category-image">
+          </div>
+          <p class="category-name mt-2">Decor</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Brands Section -->
-  <section class="brands-section">
+  <!-- brand section -->
+  <section class="brands-section py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>Top Electronics Brands</h2>
-        <a href="#" class="text-primary no-underline">View All</a>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title-heading">Top Electronics Brands</h2>
+        <a href="#" class="text-primary no-underline view-all-link">View All</a>
       </div>
-      <div class="brand-grid">
-        <div class="brand-card">
-          <div class="brand-logo">Apple Logo</div>
-          <div>
-            <h5 class="brand-name">IPHONE</h5>
-            <p class="brand-offer">UP to 80% OFF</p>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="brand-card">
+            <div class="brand-logo-container">
+              <img src="assest/images/iphone.png" alt="Apple Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-info">
+              <h5 class="brand-name">IPHONE</h5>
+              <p class="brand-offer">UP to 80% OFF</p>
+              <img src="assest/images/iphone.png" alt="iPhone" class="brand-product-img">
+            </div>
           </div>
         </div>
-        <div class="brand-card">
-          <div class="brand-logo">Realme Logo</div>
-          <div>
-            <h5 class="brand-name">REALME</h5>
-            <p class="brand-offer">UP to 80% OFF</p>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="brand-card">
+            <div class="brand-logo-container">
+              <img src="assets/images/realme-logo.png" alt="Realme Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-info">
+              <h5 class="brand-name">REALME</h5>
+              <p class="brand-offer">UP to 80% OFF</p>
+              <img src="assets/images/realme-phone.png" alt="Realme Phone" class="brand-product-img">
+            </div>
           </div>
         </div>
-        <div class="brand-card">
-          <div class="brand-logo">Xiaomi Logo</div>
-          <div>
-            <h5 class="brand-name">XIAOMI</h5>
-            <p class="brand-offer">UP to 80% OFF</p>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="brand-card">
+            <div class="brand-logo-container">
+              <img src="assets/images/xiaomi-logo.png" alt="Xiaomi Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-info">
+              <h5 class="brand-name">XIAOMI</h5>
+              <p class="brand-offer">UP to 80% OFF</p>
+              <img src="assets/images/xiaomi-phone.png" alt="Xiaomi Phone" class="brand-product-img">
+            </div>
           </div>
         </div>
-        <div class="brand-card">
-          <div class="brand-logo">Vivo Logo</div>
-          <div>
-            <h5 class="brand-name">VIVO</h5>
-            <p class="brand-offer">UP to 80% OFF</p>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="brand-card">
+            <div class="brand-logo-container">
+              <img src="assets/images/vivo-logo.png" alt="Vivo Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-info">
+              <h5 class="brand-name">VIVO</h5>
+              <p class="brand-offer">UP to 80% OFF</p>
+              <img src="assets/images/vivo-phone.png" alt="Vivo Phone" class="brand-product-img">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Daily Essentials Section -->
-  <section class="essentials-section">
+  <!-- essential section -->
+  <section class="essentials-section py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>Daily Essentials</h2>
-        <a href="#" class="text-primary no-underline">View All</a>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title-heading">Daily Essentials</h2>
+        <a href="#" class="text-primary no-underline view-all-link">View All</a>
       </div>
-      <div class="essential-grid">
-        <div class="essential-card">
-          <div class="essential-image">Daily Essentials Image</div>
-          <h5 class="essential-name">Daily Essentials</h5>
-          <p class="essential-offer">UP to 50% OFF</p>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/daily-essentials.png" alt="Daily Essentials" class="essential-image">
+            <h5 class="essential-name mt-3">Daily Essentials</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
         </div>
-        <div class="essential-card">
-          <div class="essential-image">Vegetables Image</div>
-          <h5 class="essential-name">Vegetables</h5>
-          <p class="essential-offer">UP to 50% OFF</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/vegetables.png" alt="Vegetables" class="essential-image">
+            <h5 class="essential-name mt-3">Vegetables</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
         </div>
-        <div class="essential-card">
-          <div class="essential-image">Fruits Image</div>
-          <h5 class="essential-name">Fruits</h5>
-          <p class="essential-offer">UP to 50% OFF</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/fruits.png" alt="Fruits" class="essential-image">
+            <h5 class="essential-name mt-3">Fruits</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
         </div>
-        <div class="essential-card">
-          <div class="essential-image">Strawberry Image</div>
-          <h5 class="essential-name">Strawberry</h5>
-          <p class="essential-offer">UP to 50% OFF</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/strawberry.png" alt="Strawberry" class="essential-image">
+            <h5 class="essential-name mt-3">Strawberry</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
         </div>
-        <div class="essential-card">
-          <div class="essential-image">Mango Image</div>
-          <h5 class="essential-name">Mango</h5>
-          <p class="essential-offer">UP to 50% OFF</p>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/mango.png" alt="Mango" class="essential-image">
+            <h5 class="essential-name mt-3">Mango</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
+        </div>
+         <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="essential-card">
+            <img src="assets/images/cherry.png" alt="Cherry" class="essential-image">
+            <h5 class="essential-name mt-3">Cherry</h5>
+            <p class="essential-offer">UP to 50% OFF</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
+  <!-- footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
+      <div class="row footer-content">
+        <div class="col-lg-4 col-md-6 footer-column">
           <h5 class="footer-heading">MegaMart</h5>
           <div class="footer-contact">
             <p>WhatsApp: +120-918-2132</p>
             <p>Call us: +120-918-2132</p>
           </div>
-          <div class="app-download">
-            <div class="app-store">App Store</div>
-            <div class="google-play">Google Play</div>
+          <div class="app-download d-flex mt-3">
+            <a href="#" class="me-2"><img src="assets/images/app-store.png" alt="App Store" class="app-download-icon"></a>
+            <a href="#"><img src="assets/images/google-play.png" alt="Google Play" class="app-download-icon"></a>
           </div>
         </div>
-        <div class="footer-column">
+        <div class="col-lg-4 col-md-6 footer-column">
           <h5 class="footer-heading">Most Popular Categories</h5>
-          <a href="#" class="footer-link">Staples</a>
-          <a href="#" class="footer-link">Beverages</a>
-          <a href="#" class="footer-link">Personal Care</a>
-          <a href="#" class="footer-link">Home Care</a>
-          <a href="#" class="footer-link">Baby Care</a>
-          <a href="#" class="footer-link">Vegetables & Fruits</a>
-          <a href="#" class="footer-link">Snacks & Foods</a>
-          <a href="#" class="footer-link">Dairy & Bakery</a>
+          <div class="row">
+            <div class="col-6">
+              <a href="#" class="footer-link">Staples</a>
+              <a href="#" class="footer-link">Beverages</a>
+              <a href="#" class="footer-link">Personal Care</a>
+              <a href="#" class="footer-link">Home Care</a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="footer-link">Baby Care</a>
+              <a href="#" class="footer-link">Vegetables & Fruits</a>
+              <a href="#" class="footer-link">Snacks & Foods</a>
+              <a href="#" class="footer-link">Dairy & Bakery</a>
+            </div>
+          </div>
         </div>
-        <div class="footer-column">
+        <div class="col-lg-4 col-md-12 footer-column">
           <h5 class="footer-heading">Customer Services</h5>
-          <a href="#" class="footer-link">About Us</a>
-          <a href="#" class="footer-link">Terms & Conditions</a>
-          <a href="#" class="footer-link">FAQ</a>
-          <a href="#" class="footer-link">Privacy Policy</a>
-          <a href="#" class="footer-link">E-waste Policy</a>
-          <a href="#" class="footer-link">Cancellation & Return</a>
+          <div class="row">
+            <div class="col-6">
+              <a href="#" class="footer-link">About Us</a>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+              <a href="#" class="footer-link">FAQ</a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">E-waste Policy</a>
+              <a href="#" class="footer-link">Cancellation & Return</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="copyright">© 2022 ALL RIGHT RESERVED, Reliance Retail</div>
+      <div class="copyright text-center mt-4">© 2022 ALL RIGHT RESERVED, Reliance Retail</div>
     </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
