@@ -335,12 +335,10 @@ img {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 1200px;
-  padding: 40px;
   color: var(--light-text);
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   transition: background-image 0.5s ease-in-out;
 }
@@ -390,13 +388,15 @@ img {
   font-weight: 600;
   color: var(--light-text);
 }
-.dots{
+
+.dots {
   position: absolute;
   left: 7%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 .hero-image-content {
   flex-shrink: 0;
   text-align: center;
@@ -424,33 +424,29 @@ img {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: var(--light-text);
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 1.2rem;
   z-index: 2;
   transition: background-color var(--transition-speed-fast) ease;
 }
 
-.slider-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .slider-arrow-left {
-  left: 15px;
+  left: 10; 
 }
 
 .slider-arrow-right {
-  right: 15px;
+  right: 0; 
 }
 
-
+/* Controller Icon Styling */
+.controller-icon {
+  width: 100%;
+  height: 100%;
+}
 /* Product Sections */
 .product-section,
 .categories-section,
@@ -492,18 +488,32 @@ img {
 
 .discount-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ff4d4d;
-  color: var(--light-text);
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  z-index: 10;
-  transform: rotate(5deg);
-  transform-origin: top right;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  top: -2px;
+  right: -5px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.badge-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.badge-text {
+  color: white;
+  z-index: 2;
+  text-align: center;
+  line-height: 1.1;
+  font-size: 1rem;
 }
 
 
