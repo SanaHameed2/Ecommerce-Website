@@ -447,6 +447,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 /* Product Sections */
 .product-section,
 .categories-section,
@@ -463,13 +464,26 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
 }
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a4a4a;
+   text-decoration: underline;
+  text-decoration-color: #009CDE;
+  text-underline-offset: 6px;
+}
+
+.section-heading .highlight {
+  color: #009CDE;
+  font-weight: 700;
+}
 
 .product-card,
 .category-card,
 .essential-card,
 .brand-card {
   background-color: var(--white-background);
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: var(--box-shadow-light);
   transition: transform var(--transition-speed-normal) ease, box-shadow var(--transition-speed-normal) ease;
   height: 100%;
@@ -543,20 +557,22 @@ img {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--dark-text);
+  color:#333333;
+
 }
 
 .product-prices {
   display: flex;
   align-items: baseline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.1rem;
+  
 }
 
 .product-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--accent-color);
-  margin-right: 0.75rem;
+  color:#333333;
+  margin-right: 0.9rem;
   transition: transform var(--transition-speed-fast) ease;
 }
 
@@ -572,13 +588,13 @@ img {
 
 .product-old-price {
   font-size: 0.9rem;
-  color: var(--secondary-color);
+  color:#333333;
   text-decoration: line-through;
 }
 
 .product-save {
   font-size: 0.9rem;
-  color: #28a745;
+  color: #198031;
   font-weight: 500;
   margin-top: auto;
 }
@@ -623,7 +639,7 @@ img {
   padding: 1rem;
   gap: 1rem;
   background-color: var(--white-background);
-  border-radius: 8px;
+  border-radius: 14px;
   box-shadow: var(--box-shadow-light);
   transition: transform var(--transition-speed-normal) ease, box-shadow var(--transition-speed-normal) ease;
 }
