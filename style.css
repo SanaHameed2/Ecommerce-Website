@@ -731,6 +731,7 @@ img {
   transform: rotate(15deg);
   transition: transform var(--transition-speed-normal) ease, opacity var(--transition-speed-normal) ease;
 }
+.brand-product-img { display: none; }
 
 .brand-card:hover .brand-product-img {
   transform: rotate(0deg) scale(1.1);
