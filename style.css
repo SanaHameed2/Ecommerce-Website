@@ -9,11 +9,11 @@
   --white-background: #fff;
   --border-color: #ddd;
   --card-background: #f1f5f9;
-  --topbar-bg-color: #F5F5F5;
-  --grocery-active-bg: #008ECC;
+  --topbar-bg-color: #f5f5f5;
+  --grocery-active-bg: #008ecc;
 
-  --font-family-primary: 'HK Grotesk', sans-serif;
-  --font-family-secondary: 'Merriweather', serif;
+  --font-family-primary: "HK Grotesk", sans-serif;
+  --font-family-secondary: "Merriweather", serif;
 
   --transition-speed-fast: 0.2s;
   --transition-speed-normal: 0.3s;
@@ -80,7 +80,7 @@ img {
 }
 
 .section-title-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -102,7 +102,7 @@ img {
 }
 
 .view-all-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -115,7 +115,6 @@ img {
 .view-all-link:hover::after {
   width: 100%;
 }
-
 
 /* Top Bar */
 .top-bar {
@@ -138,7 +137,9 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease;
+  transition:
+    color var(--transition-speed-fast) ease,
+    transform var(--transition-speed-fast) ease;
 }
 
 .top-bar-link:hover {
@@ -179,6 +180,7 @@ img {
   align-items: center;
   gap: 1rem;
   text-decoration: none;
+  padding: 0 10px;
 }
 
 .navbar-icon {
@@ -238,7 +240,7 @@ img {
   display: flex;
   gap: 1.5rem;
   margin: 0;
-  padding: 0;
+  padding: 0, 8px;
 }
 
 .navbar-right a {
@@ -248,6 +250,10 @@ img {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
+}
+
+.navbar-right .nav-links li a {
+  padding: 0 8px;
 }
 
 .navbar-right a:hover {
@@ -264,9 +270,7 @@ img {
   background-color: var(--white-background);
   padding: 1rem 0;
   border-bottom: 1px solid var(--border-color);
-
 }
-
 
 .category-list {
   list-style: none;
@@ -289,7 +293,10 @@ img {
   color: var(--dark-text);
   font-size: 0.95rem;
   font-weight: 500;
-  transition: background-color var(--transition-speed-fast) ease, color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease;
+  transition:
+    background-color var(--transition-speed-fast) ease,
+    color var(--transition-speed-fast) ease,
+    transform var(--transition-speed-fast) ease;
   white-space: nowrap;
 }
 
@@ -327,7 +334,6 @@ img {
   transform: rotate(180deg);
 }
 
-
 /* Hero Section */
 .hero-section {
   background-size: cover;
@@ -344,7 +350,7 @@ img {
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -435,11 +441,11 @@ img {
 }
 
 .slider-arrow-left {
-  left: 10; 
+  left: 10;
 }
 
 .slider-arrow-right {
-  right: 0; 
+  right: 0;
 }
 
 /* Controller Icon Styling */
@@ -468,13 +474,13 @@ img {
   font-size: 2rem;
   font-weight: 600;
   color: #4a4a4a;
-   text-decoration: underline;
-  text-decoration-color: #009CDE;
+  text-decoration: underline;
+  text-decoration-color: #009cde;
   text-underline-offset: 6px;
 }
 
 .section-heading .highlight {
-  color: #009CDE;
+  color: #009cde;
   font-weight: 700;
 }
 
@@ -485,7 +491,9 @@ img {
   background-color: var(--white-background);
   border-radius: 16px;
   box-shadow: var(--box-shadow-light);
-  transition: transform var(--transition-speed-normal) ease, box-shadow var(--transition-speed-normal) ease;
+  transition:
+    transform var(--transition-speed-normal) ease,
+    box-shadow var(--transition-speed-normal) ease;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -530,7 +538,6 @@ img {
   font-size: 1rem;
 }
 
-
 /* Product Card Specifics */
 .product-card-img {
   width: 100%;
@@ -557,21 +564,19 @@ img {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color:#333333;
-
+  color: #333333;
 }
 
 .product-prices {
   display: flex;
   align-items: baseline;
   margin-bottom: 1.1rem;
-  
 }
 
 .product-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color:#333333;
+  color: #333333;
   margin-right: 0.9rem;
   transition: transform var(--transition-speed-fast) ease;
 }
@@ -581,14 +586,21 @@ img {
 }
 
 @keyframes pulsePrice {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); color: #ffc107; }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    color: #ffc107;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .product-old-price {
   font-size: 0.9rem;
-  color:#333333;
+  color: #333333;
   text-decoration: line-through;
 }
 
@@ -598,7 +610,6 @@ img {
   font-weight: 500;
   margin-top: auto;
 }
-
 
 /* Category Card Specifics */
 .category-card {
@@ -617,15 +628,18 @@ img {
   height: 120px;
   object-fit: contain;
   margin-bottom: 0.75rem;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 10px;
   border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
 }
 
 .category-image:hover {
-  border: 1px solid #008ECC;
-  box-shadow: 0 0 13px #008ECC;
+  border: 1px solid #008ecc;
+  box-shadow: 0 0 13px #008ecc;
 }
 
 .category-name {
@@ -669,7 +683,7 @@ img {
 }
 
 .brand-logo-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -717,9 +731,15 @@ img {
 }
 
 @keyframes pulseOffer {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .brand-product-img {
@@ -729,15 +749,18 @@ img {
   width: 80px;
   opacity: 0.2;
   transform: rotate(15deg);
-  transition: transform var(--transition-speed-normal) ease, opacity var(--transition-speed-normal) ease;
+  transition:
+    transform var(--transition-speed-normal) ease,
+    opacity var(--transition-speed-normal) ease;
 }
-.brand-product-img { display: none; }
+.brand-product-img {
+  display: none;
+}
 
 .brand-card:hover .brand-product-img {
   transform: rotate(0deg) scale(1.1);
   opacity: 0.4;
 }
-
 
 /* Essential Card Specifics */
 .essential-card {
@@ -770,7 +793,6 @@ img {
   color: #28a745;
   font-weight: 500;
 }
-
 
 /* Footer */
 .footer {
@@ -819,7 +841,9 @@ img {
 .app-download-icon {
   height: 40px;
   width: auto;
-  transition: transform var(--transition-speed-fast) ease, filter var(--transition-speed-fast) ease;
+  transition:
+    transform var(--transition-speed-fast) ease,
+    filter var(--transition-speed-fast) ease;
 }
 
 .app-download-icon:hover {
@@ -851,7 +875,7 @@ img {
 }
 
 .footer-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1px;
@@ -873,7 +897,6 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
 }
-
 
 /* Responsive Media Queries */
 
@@ -905,7 +928,7 @@ img {
     left: 0;
     background-color: var(--white-background);
     border-top: 1px solid var(--border-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
     z-index: 999;
   }
